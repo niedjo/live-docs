@@ -26,7 +26,7 @@ Avant de commencer, assurez-vous d'avoir les éléments suivants :
 
 1. Clonez le repository :
    ```bash
-   git clone https://github.com/your-username/live-docs.git
+   git clone https://github.com/niedjo/live-docs.git
    cd live-docs
    ```
 
