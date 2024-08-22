@@ -1,36 +1,112 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Live Docs
 
-First, run the development server:
+**Live Docs** est une application web collaborative conçue pour la saisie de documents en temps réel, similaire à Google Docs ou Office Word. Profitez d'une expérience de rédaction fluide, avec des fonctionnalités de collaboration en direct et une interface moderne.
+
+## 🔗 Lien du site
+
+Visitez le site : [Live Docs](https://live-docs.onrender.com) *(Remplacez par le lien réel une fois le déploiement effectué.)*
+
+## ✨ Fonctionnalités
+
+- 📝 **Édition de Documents en Temps Réel** : Créez et modifiez des documents simultanément avec d'autres utilisateurs.
+- 👥 **Authentification Sécurisée** : Utilisez Clerk pour une gestion des utilisateurs simple et sécurisée.
+- 📄 **Fonctionnalités Avancées d'Édition** : Profitez de fonctionnalités de traitement de texte comparables à celles de Google Docs ou Office Word.
+- 🎨 **Thèmes Personnalisables** : Choisissez parmi plusieurs thèmes pour une interface qui vous ressemble.
+- 🌐 **Interface Moderne et Responsive** : Conçu avec Tailwind CSS pour une expérience utilisateur optimale sur tous les appareils.
+
+## 🚀 Démarrage
+
+### Prérequis
+
+Avant de commencer, assurez-vous d'avoir les éléments suivants :
+
+- [Node.js](https://nodejs.org/en/) (Version 18 ou supérieure)
+- [npm](https://www.npmjs.com/) ou [yarn](https://yarnpkg.com/)
+- Clé API Clerk pour la gestion des utilisateurs (créez un compte sur [Clerk](https://clerk.dev/)).
+
+### Installation
+
+1. Clonez le repository :
+   ```bash
+   git clone https://github.com/your-username/live-docs.git
+   cd live-docs
+   ```
+
+2. Installez les dépendances :
+   ```bash
+   npm install
+   ```
+   ou
+   ```bash
+   yarn install
+   ```
+
+### Configuration de l'authentification Clerk
+
+Créez un fichier `.env.local` à la racine de votre projet et ajoutez-y les clés nécessaires pour configurer Clerk :
+
+```env
+NEXT_PUBLIC_CLERK_FRONTEND_API=your-clerk-frontend-api
+CLERK_API_KEY=your-clerk-api-key
+```
+
+Remplacez `your-clerk-frontend-api` et `your-clerk-api-key` par vos propres valeurs.
+
+### Démarrer le serveur de développement
+
+Pour lancer l'application en mode développement, exécutez la commande suivante :
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+L'application sera accessible à l'adresse [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Construction pour la production
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Pour créer une version optimisée de l'application, utilisez la commande :
 
-## Learn More
+```bash
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+Ensuite, vous pouvez démarrer l'application optimisée avec :
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## 🛠️ Technologies Utilisées
 
-## Deploy on Vercel
+- **[Next.js](https://nextjs.org/)** - Framework React pour les applications web.
+- **[React](https://reactjs.org/)** - Bibliothèque JavaScript pour créer des interfaces utilisateurs.
+- **[Tailwind CSS](https://tailwindcss.com/)** - Framework CSS utilitaire pour un design rapide.
+- **[Clerk](https://clerk.dev/)** - Solution d'authentification et gestion des utilisateurs.
+- **[Liveblocks](https://liveblocks.io/)** - API pour la collaboration en temps réel.
+- **[Lexical](https://lexical.dev/)** - Éditeur de texte extensible pour le Web.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📦 Structure du projet
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```
+live_docs/
+├── app/              # Pages Next.js
+├── public/           # Fichiers publics (images, icônes, etc.)
+├── components/       # Composants React
+├── lib/              # Bibliothèques et configurations spécifiques
+├── tsconfig.json     # Configuration TypeScript
+├── package.json      # Dépendances et scripts
+└── README.md         # Documentation du projet
+```
+
+## 💡 À propos
+
+**Live Docs** est conçu pour les équipes et les individus qui souhaitent collaborer en temps réel sur des documents tout en bénéficiant d'une interface moderne et sécurisée.
+
+## 📄 License
+
+Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
+
+---
+
+**Live Docs** - Collaborative Real-Time Document Editing for Teams.
