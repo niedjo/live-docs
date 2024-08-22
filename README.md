@@ -3,9 +3,6 @@
 
 **Live Docs** est une application web collaborative conçue pour la saisie de documents en temps réel, similaire à Google Docs ou Office Word. Profitez d'une expérience de rédaction fluide, avec des fonctionnalités de collaboration en direct et une interface moderne.
 
-## 🔗 Lien du site
-
-Visitez le site : [Live Docs](https://live-docs.onrender.com) *(Remplacez par le lien réel une fois le déploiement effectué.)*
 
 ## ✨ Fonctionnalités
 
